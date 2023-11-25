@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HB Java</title>
+    <link rel="icon" type="image/png" href="">
+    <link rel="stylesheet" href="HBJstyle.css">
+</head>
+<body>
+<!-- Menu Overlay -->
+<div class="overlay overlay-slide-left" id="overlay">
+    <!-- Menu Items -->
+    <nav>
+        <ul>
+            <li id="nav-1" class="slide-out-1"><a href="#home">Home</a></li>
+            <li id="nav-2" class="slide-out-2"><a href="#about">About</a></li>
+            <li id="nav-3" class="slide-out-3"><a href="#orders">Orders</a></li>
+            <li id="nav-4" class="slide-out-4"><a href="#projects">Projects</a></li>
+            <li id="nav-5" class="slide-out-5"><a href="#contact">Contact</a></li>opt4
+        </ul>
+    </nav>
+</div>
+<!-- Menu Bars -->
+<div class="menu-bars" id="menu-bars">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+</div>
+<!-- Sections -->
+<section id="home">
+    <img src="chsign3.jpg" alt="Your Company's Logo">
+</section>
+
+<section id="about">
+
+    <div class="card">
+        <img class="image-left" src="CoffeeHouse/images/chsign3.jpg" alt="Profile Picture" style="width: 50%; float: left; margin-right: 10px;">
+        <p>Welcome to Coffee House, a unique blend of technology and tradition, nestled in the heart of San Antonio, Texas. We are more than just a coffee shop; we are a community hub, a place where ideas percolate, and connections are brewed.<br>
+            Founded by two full-stack web developers from Codeup Academy, our journey began with a shared passion for coding and coffee. We envisioned a space where the aroma of freshly brewed coffee meets the hum of hardworking laptops, a place where the local community could gather, engage, and feel at home.<br>
+            At Coffee House, we believe in the power of community engagement. We strive to be a cornerstone for local gatherings, hosting events like karaoke nights, espresso tastings, and board game nights. We also actively participate in local events, from farmers' markets to high school football games, to strengthen our bond with the community.<br>
+            Our coffee is more than just a beverage; it's a craft. We source our beans from ethical and sustainable sources, ensuring that every cup you enjoy is a testament to our commitment to quality. Our menu, inspired by our coding background, features innovative drinks with fun names that reflect our love for programming and web development.<br>
+
+            But we're not just about coffee. As web developers, we understand the importance of a good Wi-Fi connection and a comfortable space to work. That's why we've designed our coffee house to be a haven for developers, students, freelancers, and anyone else who needs a cozy spot to work or study.<br>
+            We're also committed to giving back to the tech community. We host coding workshops and meetups, providing a platform for learning and collaboration. We believe in fostering a culture of continuous learning and innovation, mirroring the dynamic world of web development.<br>
+            Join us at Coffee House, where every sip is a story, and every visit is an opportunity to be part of our community. We can't wait to welcome you!<br>
+            Remember, at Coffee House, it's not just about the coffee; it's about the code, the community, and the connections.
+        </p>
+        <!--                <button style="background-color: #5c2f27; color: #f6edce;">Learn More</button>-->
+    </div>
+</section>
+
+
+
+<section id="orders">
+    <div class="container">
+        <div class="row d-flex">
+            <div class=" order-1 d-flex">
+                <div class="col-6 coffee-boxes">
+                    <h3 class="action-title centered">Search Coffee</h3>
+                    <div class="card" style="width: 100%;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item centered">Roast</li>
+                            <li class="list-group-item">
+                                <form>
+                                    <label for="roast-selection"></label>
+                                    <select id="roast-selection">
+                                        <option>all</option>
+                                        <option>light</option>
+                                        <option>medium</option>
+                                        <option>dark</option>
+                                    </select>
+                                </form>
+                            </li>
+                            <li class="list-group-item centered">Coffee Name</li>
+                            <li class="list-group-item">
+                                <form class="d-flex">
+                                    <input id="searchBox" class="form-control me-2" type="search" placeholder="Search"
+                                           aria-label="Search">
+                                    <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 coffee-boxes">
+
+                    <h3 class="action-title centered">Add Coffee</h3>
+                    <div class="card" style="width: 100%;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item centered">Roast</li>
+                            <li class="list-group-item">
+                                <form id="coffee-form">
+                                    <label for="roast-selection"></label>
+                                    <select id="roast-selection-new">
+                                        <option>all</option>
+                                        <option>light</option>
+                                        <option>medium</option>
+                                        <option>dark</option>
+                                    </select>
+                                </form>
+                            </li>
+                            <li class="list-group-item centered">Name</li>
+                            <li class="list-group-item">
+                                <div class="input-group">
+                                    <input id="addCoffee" type="text" class="form-control" placeholder="Coffee name"
+                                           aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">ADD!
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" id="coffees"></div>
+</section>
+<section id="projects"><h1>These Are My Results</h1></section>
+<section id="contact"><h1>Available Anytime</h1></section>
+<!-- Script -->
+<script src="HBJstyle.css"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blank</title>
+  <link rel="stylesheet" href="CHstyle.css">
+</head>
+<body>
+
+<!-- Sections Orders -->
+<section id="orders">
+<!--  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">-->
+<!--    &lt;!&ndash; Logo Title &ndash;&gt;-->
+<!--    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">-->
+<!--      <svg class="bi me-2" width="40" height="32">-->
+<!--        <use xlink:href="#bootstrap"></use>-->
+<!--      </svg>-->
+<!--      <span class="fs-4">Brew Brothers</span>-->
+<!--    </a>-->
+<!--    &lt;!&ndash; Nav &ndash;&gt;-->
+<!--    <ul class="nav nav-pills">-->
+<!--      <li class="nav-item"><a href="#" class="nav-link active text-dark" aria-current="page">Home</a></li>-->
+<!--      <li>-->
+<!--        <div class="dropdown">-->
+<!--          <button class="btn btn-secondary dropdown-toggle text-dark" type="button"-->
+<!--                  data-bs-toggle="dropdown"-->
+<!--                  aria-expanded="false">-->
+<!--            BUY NOW !-->
+<!--          </button>-->
+<!--          <ul class="dropdown-menu">-->
+<!--            <li><a class="dropdown-item text-dark" href="#">By The Cup</a></li>-->
+<!--            <li><a class="dropdown-item text-dark" href="#">By The Pound</a></li>-->
+<!--            <li><a class="dropdown-item text-dark" href="#">Parties & Catering</a></li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </li>-->
+<!--      <li class="nav-item"><a href="#" class="text-dark nav-link">Specials</a></li>-->
+<!--      <li class="nav-item"><a href="#" class="text-dark nav-link">Locations</a></li>-->
+<!--      <li class="nav-item"><a href="#" class="text-dark nav-link">Meet the Team</a></li>-->
+<!--    </ul>-->
+<!--  </header>-->
+  <!-- Jumbotron -->
+<!--  <div class="p-4 text-center bg-body-tertiary rounded-3" id="jumbotron">-->
+<!--    <svg class="bi mt-2 mb-1" width="50" height="50">-->
+<!--      <use xlink:href="#bootstrap"></use>-->
+<!--    </svg>-->
+<!--    <h1 class="jumbotron-text fs-4">Exceptional Coffee</h1>-->
+<!--    <p class="col-lg-8 mx-auto fs-6 jumbotron-text">-->
+<!--      Embrace the Daily Ritual of Exceptional Coffee.-->
+<!--    </p>-->
+<!--    <div class="d-inline-flex gap-2 mb-4">-->
+<!--      <button class="d-inline-flex align-items-center btn btn-primary btn-sm px-3 rounded-pill" type="button">-->
+<!--        Order Now!-->
+<!--        <svg class="bi ms-1" width="20" height="20">-->
+<!--          <use xlink:href="#arrow-right-short"></use>-->
+<!--        </svg>-->
+<!--      </button>-->
+<!--      <button class="btn btn-outline-secondary btn-sm px-3 rounded-pill" type="button">-->
+<!--        Secondary link-->
+<!--      </button>-->
+<!--    </div>-->
+<!--  </div>-->
+  <!-- Coffee Boxes -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Search Coffee Box -->
+        <h3 class="action-title centered">Search Coffee</h3>
+        <div class="card" style="width: 100%;">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item centered">Roast</li>
+            <li class="list-group-item">
+              <div class="input-group">
+                <label for="roast-selection" class="visually-hidden">Select Roast</label>
+                <select id="roast-selection" class="form-select">
+                  <option selected>Choose Roast...</option>
+                  <option value="all">All</option>
+                  <option value="light">Light</option>
+                  <option value="medium">Medium</option>
+                  <option value="dark">Dark</option>
+                </select>
+              </div>
+            </li>
+            <li class="list-group-item centered">Coffee Name</li>
+            <li class="list-group-item">
+              <form class="d-flex">
+                <input id="searchBox" class="form-control me-2" type="search"
+                       placeholder="Search"
+                       aria-label="Search">
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <!-- Add Coffee Box -->
+        <h3 class="action-title centered">Add Coffee</h3>
+        <div class="card" style="width: 100%;">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item centered">Roast</li>
+            <li class="list-group-item">
+              <div class="input-group">
+                <label for="roast-selection-new" class="visually-hidden">Select Roast</label>
+                <select id="roast-selection-new" class="form-select">
+                  <option selected>Choose Roast...</option>
+                  <option value="all">All</option>
+                  <option value="light">Light</option>
+                  <option value="medium">Medium</option>
+                  <option value="dark">Dark</option>
+                </select>
+              </div>
+            </li>
+            <li class="list-group-item centered">Name</li>
+            <li class="list-group-item">
+              <div class="input-group">
+                <input id="addCoffee" type="text" class="form-control" placeholder="Coffee name"
+                       aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">ADD!
+                </button>
+              </div>
+            </li>
+            <div class="container" style="max-height: 200px; overflow-y: auto;">
+              <div class="row" id="coffees"></div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Coffee Table -->
+  <div class="container">
+    <div class="row">
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>NAME</th>
+          <th>ROAST</th>
+        </tr>
+        </thead>
+        <tbody id="coffees"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<script src="CHscript.js"></script>
+</body>
+</html>
